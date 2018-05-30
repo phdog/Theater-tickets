@@ -1,0 +1,263 @@
+body,
+p,
+figure,
+table,
+tr,
+td,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin:0;
+    padding:0;
+}
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+
+body {
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+}
+
+
+button,
+input {
+    overflow: hidden;
+
+    &:hover {
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+}
+
+
+input,
+select {
+    -webkit-border-radius: 0;
+}
+
+
+input,
+select,
+textarea,
+optgroup,
+button {
+    font-family: inherit;
+	margin: 0;
+    vertical-align: middle;
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+input::-ms-clear,
+textarea::-ms-clear {
+    display: none;
+    width: 0;
+    width: 0;
+    height: 0;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+
+button::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+
+button,
+[type="reset"],
+[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+    border-radius: 0;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+}
+
+
+:disabled,
+[aria-disabled="true"] {
+    cursor: not-allowed;
+}
+
+// Вернуть потом
+/*
+[title]:not(a):not(button) {
+    cursor: help;
+}
+*/
+
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
+sub {
+  bottom: -0.25em;
+}
+
+
+sup {
+  top: -0.5em;
+}
+
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+
+    &:hover,
+    &:active {
+        outline-width: 0;
+    }
+
+}
+
+
+img {
+	vertical-align: top;
+    max-width: 100%;
+	border-style: none;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+small {
+    font-size: 80%;
+}
+
+
+[role="button"] {
+    cursor: pointer;
+    user-select: none;
+}
+
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+
+svg {
+    vertical-align: top;
+	fill: currentColor;
+	transform: translateZ(0);
+
+    &:not(:root) {
+      overflow: hidden;
+    }
+
+    button & {
+        display: block;
+        margin: auto;
+    }
+
+    &[width="0"][height="0"] {
+        position: absolute;
+    }
+
+}
+
+
+[hidden] {
+    display: none;
+}
+
+
+section,
+header,
+footer,
+menu,
+nav,
+aside,
+article,
+details,
+summary,
+figure,
+figcaption,
+hgroup,
+time,
+picture,
+main {
+    display:block;
+}

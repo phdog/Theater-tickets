@@ -1,0 +1,25 @@
+.Receipt {
+    width: 15rem;
+    height: 30rem;
+    border-color: silver;
+    border-width: 0.2rem;
+    border-radius: 0.3rem;
+    border-style: solid;
+
+    &--headline {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    &--seats {
+        height: 85%;
+        margin-left: 0.5rem;
+        overflow-y: scroll;
+    }
+
+    &--price {
+        height: 15%;
+        margin-left: 0.5rem;
+    }
+}
